@@ -1,0 +1,61 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e8f5e9; /* Adjust the base color if needed */
+    background-image: url("./assets/colorkit.png"); /* Updated background image */
+    background-size: cover; /* Cover the entire page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.upload-container {
+    background-color: #ffffff; /* Adjusted for better contrast against the pattern */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+input[type="file"] {
+    border: 2px solid #a5d6a7;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(100% - 24px);
+    cursor: pointer;
+    color: #4e944f;
+}
+
+input[type="file"]::file-selector-button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #81c784;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: #66bb6a;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #43a047;
+}
